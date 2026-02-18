@@ -1,25 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import Button1 from './component/button.js';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  function message(){
+    alert("BUTTON CLICKED!");
+  }
+
+  return <>
+  <h1>DANGAL GREETINGS</h1>
+  <Button1 text="click me!" event={message}/>
+  </> 
+  
 }
 
 export default App;
